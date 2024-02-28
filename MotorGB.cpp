@@ -147,8 +147,8 @@ uint16_t MotorGB::readA(){
 }
 
 uint16_t MotorGB::readB(){
-     if (Status_l > off_pulseWidth_r || Status_l < off_pulseWidth_r) {
-        Status_l=off_pulseWidth_r;//save the current pulsewidth
+     if (Status_r > off_pulseWidth_r || Status_l < off_pulseWidth_r) {
+        Status_r=off_pulseWidth_r;//save the current pulsewidth
         A_pulse_count_r=0;
     }
     return B_pulse_count_r;//number of on periods
