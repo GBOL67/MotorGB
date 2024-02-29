@@ -1,23 +1,11 @@
 /*
-  ServoGB.h - Interrupt driven Servo library for Arduino using 8 bit timers (Timer2 of an atmega328p chip) 
+  MotorGB.h - Interrupt driven Servo library for Arduino using 8 bit timers (Timer2 of an atmega328p chip) 
   This library is free software; you can redistribute it and/or
   modify it.
   OMOGBOLAHAN ADEDAMOLA OLADIPUPO.
 */
 
-/*
-  A servo is activated by creating an instance of the ServoGB class passing
-  the desired pin to the attach() method.
-  The servos are pulsed in the background using the value most recently
-  written using the write() method.
 
-  The methods are:
-
-    ServoGB - Class for manipulating servo motors connected to Arduino pins.
-
-    attach(pin ) - Attaches a servo motor to an I/O pin.
-    write()     - Sets the servo angle in degrees. 
- */
 #include "Arduino.h"
 #include "MotorGB.h"  
 
